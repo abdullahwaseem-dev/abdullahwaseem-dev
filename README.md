@@ -1,6 +1,6 @@
-[<div align="center">
+<div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:02569B,100:13B9FD&height=200&section=header&text=Muhammad%20Abdullah%20Waseem&fontSize=45&fontColor=fff&animation=fadeIn&fontAlignY=35&desc=Flutter%20%26%20Windows%20Desktop%20Developer&descAlignY=55&descSize=18" width="100%"/>
+<img src="banner.svg" width="100%"/>
 
 [![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&pause=1000&color=02569B&center=true&vCenter=true&width=700&lines=Cross-Platform+Flutter+Development;Bilingual+Arabic%2FEnglish+%7C+Full+RTL+UI;Offline+Windows+Desktop+Systems;Open+for+Remote+Contract+Work)](https://git.io/typing-svg)
 
@@ -87,9 +87,8 @@
 
 ### 📫 Let's Work Together
 
-📧 your-email@example.com &nbsp;|&nbsp; 💼 [LinkedIn](https://linkedin.com/in/muhammad-abdullah-waseem-4159b81a) &nbsp;|&nbsp; 🌐 [Portfolio](https://your-portfolio-url.vercel.app)
+📧 muammad112266@gmail.com &nbsp;|&nbsp; 💼 [LinkedIn](https://linkedin.com/in/muhammad-abdullah-waseem-4159b81a) &nbsp;|&nbsp; 🌐 [Portfolio](https://abdullah-waseem.vercel.app/)
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:13B9FD,100:02569B&height=100&section=footer" width="100%"/>
+<img src="footer.svg" width="100%"/>
 
 </div>
-](https://abdullah-waseem.vercel.app/)
