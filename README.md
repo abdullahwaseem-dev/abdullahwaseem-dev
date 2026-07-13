@@ -4,10 +4,10 @@
 
 [![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&pause=1000&color=02569B&center=true&vCenter=true&width=700&lines=Cross-Platform+Flutter+Development;Bilingual+Arabic%2FEnglish+%7C+Full+RTL+UI;Offline+Windows+Desktop+Systems;Open+for+Remote+Contract+Work)](https://git.io/typing-svg)
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://your-portfolio-url.vercel.app)
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://abdullah-waseem.vercel.app/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/muhammad-abdullah-waseem-4159b81a)
-[![Fiverr](https://img.shields.io/badge/Fiverr-1DBF73?style=for-the-badge&logo=fiverr&logoColor=white)](https://fiverr.com/your-fiverr-username)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your-email@example.com)
+[![Fiverr](https://img.shields.io/badge/Fiverr-1DBF73?style=for-the-badge&logo=fiverr&logoColor=white)](https://www.fiverr.com/users/abdullah3639)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:muammad112266@gmail.com)
 
 ![Profile Views](https://komarev.com/ghpvc/?username=abdullahwaseem-dev&color=02569B&style=for-the-badge&label=PROFILE+VIEWS)
 
@@ -58,7 +58,7 @@
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=abdullahwaseem-dev&theme=tokyonight&no-frame=true&row=1&column=6"/>
+<img src="trophy.svg"/>
 
 </div>
 
