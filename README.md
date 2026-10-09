@@ -2,18 +2,16 @@
   <img src="./assets/hero.svg" width="100%" alt="Muhammad Abdullah Waseem — Flutter Developer for hire, building iOS, Android and Windows apps" />
 </a>
 
-<h3 align="center">Flutter developer for hire · iOS, Android & Windows apps · Arabic & English</h3>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/intro.svg" />
+  <img src="./assets/intro-light.svg" width="100%" alt="Flutter developer for hire. I turn ideas into apps people love: cross-platform iOS, Android and Windows apps, from the first sketch to the App Store and Google Play. Bilingual Arabic and English, based in Jeddah, Saudi Arabia, working remotely worldwide." />
+</picture>
 
 <p align="center">
-  I help startups and businesses turn ideas into fast, beautiful cross-platform apps, from the first sketch to the App Store and Google Play.<br />
-  Based in <b>Jeddah, Saudi Arabia</b> and working <b>remotely with clients worldwide</b>.
-</p>
-
-<p align="center">
-  <a href="mailto:muammad112266@gmail.com"><img src="https://img.shields.io/badge/Hire_me-54C5F8?style=for-the-badge&logo=gmail&logoColor=07080D" alt="Hire me by email" /></a>
-  <a href="https://www.fiverr.com/users/abdullah3639"><img src="https://img.shields.io/badge/Fiverr-0A0C12?style=for-the-badge&logo=fiverr&logoColor=2EE6A6" alt="Hire me on Fiverr" /></a>
-  <a href="https://www.linkedin.com/in/abdullahwaseem-dev/"><img src="https://img.shields.io/badge/LinkedIn-0A0C12?style=for-the-badge&logo=linkedin&logoColor=A78BFF" alt="LinkedIn" /></a>
-  <a href="https://abdullah-waseem.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-0A0C12?style=for-the-badge&logo=vercel&logoColor=FF8AD0" alt="Portfolio" /></a>
+  <a href="mailto:muammad112266@gmail.com?subject=New%20app%20project"><img src="./assets/btn-hire.svg" height="48" alt="Hire me" /></a>&nbsp;
+  <a href="https://www.fiverr.com/users/abdullah3639"><img src="./assets/btn-fiverr.svg" height="48" alt="Hire me on Fiverr" /></a>&nbsp;
+  <a href="https://www.linkedin.com/in/abdullahwaseem-dev/"><img src="./assets/btn-linkedin.svg" height="48" alt="LinkedIn" /></a>&nbsp;
+  <a href="https://abdullah-waseem.vercel.app/"><img src="./assets/btn-portfolio.svg" height="48" alt="Portfolio" /></a>
 </p>
 
 <br />
@@ -27,38 +25,14 @@
   <img src="./assets/section-services-light.svg" width="100%" alt="01 — What I build for clients" />
 </picture>
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <b>📱 Flutter App Development</b><br />
-      <sub>Cross-platform <b>iOS & Android apps</b> from a single Dart codebase, with native performance, smooth 60fps UI and full publishing to the App Store & Google Play.</sub>
-    </td>
-    <td width="50%" valign="top">
-      <b>🌍 Arabic & English (RTL) Apps</b><br />
-      <sub>Bilingual apps with proper <b>right-to-left layouts</b> and localization in up to 8 languages, built for <b>Saudi Arabia, the GCC & MENA</b>.</sub>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top">
-      <b>🖥️ Windows Desktop & Kiosk Systems</b><br />
-      <sub><b>Offline-first</b> Flutter desktop apps with <b>RFID, barcode & thermal printer</b> integration for retail, events, hospitals and entertainment centers.</sub>
-    </td>
-    <td valign="top">
-      <b>🏢 Custom ERP & Business Software</b><br />
-      <sub>Multi-tenant ERPs, field-sales & GPS attendance apps, inventory and <b>ZATCA-compliant</b> VAT invoicing, built around how your team really works.</sub>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top">
-      <b>🔥 Firebase & Backend APIs</b><br />
-      <sub><b>Firebase</b>, Cloud Functions, <b>Node.js & NestJS</b> APIs, PostgreSQL / PostGIS, realtime sync, auth and push notifications.</sub>
-    </td>
-    <td valign="top">
-      <b>🤖 AI-Powered Apps</b><br />
-      <sub>Adding <b>Gemini, Claude & Groq</b> to your product: smart matching, chat assistants, document automation and recommendations.</sub>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="./assets/service-flutter.svg" width="49%" alt="Flutter App Development: cross-platform iOS and Android apps from one Dart codebase, published to the App Store and Google Play" />
+  <img src="./assets/service-rtl.svg" width="49%" alt="Arabic and English apps: bilingual RTL apps localized for Saudi Arabia, the GCC and MENA" />
+  <img src="./assets/service-desktop.svg" width="49%" alt="Windows desktop and kiosk systems: offline-first Flutter apps with RFID, barcode and thermal printer integration" />
+  <img src="./assets/service-erp.svg" width="49%" alt="Custom ERP systems: multi-tenant ERPs, field sales, GPS attendance, inventory and ZATCA-compliant VAT invoicing" />
+  <img src="./assets/service-backend.svg" width="49%" alt="Firebase and backend APIs: Cloud Functions, Node.js, NestJS, PostgreSQL, realtime sync and push notifications" />
+  <img src="./assets/service-ai.svg" width="49%" alt="AI-powered apps: Gemini, Claude and Groq integrations for matching, chat assistants and automation" />
+</p>
 
 <br />
 
