@@ -4,6 +4,7 @@
 Edit the PROJECTS / SECTIONS data below, then run:
     python3 scripts/build_assets.py
 """
+import math
 import random
 from pathlib import Path
 from textwrap import wrap
@@ -64,10 +65,11 @@ PROJECTS = [
 ]
 
 SECTIONS = [
-    ("about", "01", "About me"),
+    ("services", "01", "What I build for clients"),
     ("work", "02", "Featured work"),
-    ("stack", "03", "Toolbox"),
-    ("activity", "04", "Activity"),
+    ("about", "03", "About me"),
+    ("stack", "04", "Toolbox"),
+    ("activity", "05", "Activity"),
 ]
 
 
@@ -91,116 +93,170 @@ def stars(n, seed=7):
     return "\n  ".join(out)
 
 
-def rings(cx, cy):
-    """Concentric counter-rotating rings: the hypnotic 'portal'."""
-    spec = [  # radius, dash, width, seconds, direction, gradient
-        (168, "1 10", 1.2, 90, 1, "rA"),
-        (142, "60 18 4 18", 1.4, 46, -1, "rB"),
-        (116, "2 6", 1, 60, 1, "rA"),
-        (92, "140 40", 1.8, 24, -1, "rB"),
-        (70, "3 5", 1, 38, 1, "rA"),
-    ]
+
+def silk(n, seed_phase, amp, spread, center, xs, opacity):
+    """A twisting ribbon of n hairlines whose shape morphs between three keyframes."""
+    def d(t, k):
+        ph = seed_phase + k * 2 * math.pi / 3
+        ys = [center + amp * math.sin(ph + j * 1.15) + (t - .5) * spread * math.sin(ph * 1.3 + j * 1.6)
+              for j in range(4)]
+        return f"M{xs[0]} {ys[0]:.1f}C{xs[1]} {ys[1]:.1f} {xs[2]} {ys[2]:.1f} {xs[3]} {ys[3]:.1f}"
+
     out = []
-    for r, dash, sw, sec, d, g in spec:
+    for i in range(n):
+        t = i / (n - 1)
+        frames = [d(t, k) for k in range(3)]
+        o = opacity * (.25 + .75 * math.sin(math.pi * t))
         out.append(
-            f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="url(#{g})" stroke-width="{sw}" '
-            f'stroke-dasharray="{dash}" stroke-linecap="round" class="spin" '
-            f'style="animation-duration:{sec}s;animation-direction:{"normal" if d > 0 else "reverse"}"/>'
-        )
-    # orbiting satellites on three of the rings
-    for r, sec, size, color, start in [(168, 28, 4.5, CYAN, 0), (142, 20, 3.5, "#FF8AD0", 120), (116, 14, 3, MINT, 240)]:
-        out.append(
-            f'<g class="spin" style="animation-duration:{sec}s;animation-delay:-{sec * start / 360:.1f}s">'
-            f'<circle cx="{cx}" cy="{cy - r}" r="{size * 3}" fill="{color}" opacity=".18" filter="url(#soft)"/>'
-            f'<circle cx="{cx}" cy="{cy - r}" r="{size}" fill="{color}"/></g>'
+            f'<path d="{frames[0]}" fill="none" stroke="url(#silk)" stroke-width="{.7 + .5 * math.sin(math.pi * t):.2f}" opacity="{o:.2f}">'
+            f'<animate attributeName="d" dur="16s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.33;.66;1" '
+            f'keySplines=".45 0 .55 1;.45 0 .55 1;.45 0 .55 1" values="{";".join(frames + frames[:1])}"/></path>'
         )
     return "\n  ".join(out)
 
 
 def hero():
-    words = ["cross-platform apps", "ERPs that scale", "realtime backends", "interfaces people love"]
+    words = ["apps your users love", "ERPs that scale", "Arabic & English RTL apps", "offline-first desktop systems"]
     cycle = len(words) * 3
     show = 3 / cycle * 100
     word_nodes = "\n  ".join(
-        f'<text class="word w{i}" x="80" y="350" font-family="{MONO}" font-size="18" fill="url(#ink)">'
+        f'<text class="word w{i}" x="80" y="346" font-family="{MONO}" font-size="17" fill="url(#ink)">'
         f'<tspan fill="{DIM}">building </tspan>{escape(w)}<tspan class="caret" fill="{CYAN}"> ▍</tspan></text>'
         for i, w in enumerate(words)
     )
     word_css = " ".join(f".w{i}{{animation:word {cycle}s {i * 3 - 1}s infinite both}}" for i in range(len(words)))
-    cx, cy = 960, 220
+    xs = [-80, 420, 820, 1280]
     return f"""
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440" role="img" aria-label="Muhammad Abdullah Waseem, Flutter Developer">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440" role="img" aria-label="Muhammad Abdullah Waseem, Flutter Developer for iOS, Android and Windows apps">
 <defs>
   <linearGradient id="ink" x1="0" x2="1"><stop offset="0" stop-color="{CYAN}"/><stop offset=".55" stop-color="#A78BFF"/><stop offset="1" stop-color="#FF8AD0"/></linearGradient>
+  <linearGradient id="silk" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1200" y2="0">
+    <stop offset="0" stop-color="{CYAN}"/><stop offset=".45" stop-color="#A78BFF"/><stop offset=".8" stop-color="#FF8AD0"/><stop offset="1" stop-color="{CYAN}"/>
+  </linearGradient>
   <linearGradient id="shimmer" gradientUnits="userSpaceOnUse" x1="-400" y1="0" x2="400" y2="0" spreadMethod="reflect">
     <stop offset="0" stop-color="{CYAN}"/><stop offset=".35" stop-color="#A78BFF"/><stop offset=".5" stop-color="#ffffff"/><stop offset=".65" stop-color="#A78BFF"/><stop offset="1" stop-color="#FF8AD0"/>
     <animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="800 0" dur="7s" repeatCount="indefinite"/>
   </linearGradient>
-  <linearGradient id="edge" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="{CYAN}" stop-opacity=".55"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".05"/><stop offset="1" stop-color="{VIOLET}" stop-opacity=".55"/></linearGradient>
-  <linearGradient id="rA" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="{CYAN}"/><stop offset="1" stop-color="{VIOLET}" stop-opacity=".2"/></linearGradient>
-  <linearGradient id="rB" x1="1" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#FF8AD0"/><stop offset=".6" stop-color="{VIOLET}" stop-opacity=".6"/><stop offset="1" stop-color="{CYAN}" stop-opacity=".1"/></linearGradient>
-  <radialGradient id="core" cx=".38" cy=".35" r=".75"><stop offset="0" stop-color="#ffffff"/><stop offset=".25" stop-color="#B9E9FF"/><stop offset=".6" stop-color="{VIOLET}"/><stop offset="1" stop-color="#2A1460"/></radialGradient>
-  <radialGradient id="halo"><stop offset="0" stop-color="{VIOLET}" stop-opacity=".55"/><stop offset=".5" stop-color="{CYAN}" stop-opacity=".12"/><stop offset="1" stop-color="{CYAN}" stop-opacity="0"/></radialGradient>
+  <linearGradient id="edge" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="{CYAN}" stop-opacity=".5"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".05"/><stop offset="1" stop-color="{VIOLET}" stop-opacity=".5"/></linearGradient>
   <linearGradient id="hair" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity=".25"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <linearGradient id="reveal" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset=".42" stop-color="#fff" stop-opacity=".3"/><stop offset=".7" stop-color="#fff"/></linearGradient>
+  <mask id="fadeLeft"><rect width="1200" height="440" fill="url(#reveal)"/></mask>
   <filter id="blur" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="80"/></filter>
-  <filter id="soft" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="4"/></filter>
+  <filter id="glow" x="-10%" y="-30%" width="120%" height="160%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="soft" x="-200%" y="-200%" width="500%" height="500%"><feGaussianBlur stdDeviation="4"/></filter>
   <clipPath id="frame"><rect width="1200" height="440" rx="28"/></clipPath>
 </defs>
 <style>
   @keyframes drift1{{0%,100%{{transform:translate(0,0) scale(1)}}50%{{transform:translate(140px,50px) scale(1.15)}}}}
   @keyframes drift2{{0%,100%{{transform:translate(0,0) scale(1.1)}}50%{{transform:translate(-160px,-40px) scale(.9)}}}}
   @keyframes twinkle{{0%,100%{{opacity:.08}}50%{{opacity:.85}}}}
-  @keyframes spin{{to{{transform:rotate(360deg)}}}}
-  @keyframes breathe{{0%,100%{{transform:scale(1);opacity:.85}}50%{{transform:scale(1.12);opacity:1}}}}
   @keyframes pulse{{0%{{transform:scale(1);opacity:.7}}100%{{transform:scale(3.2);opacity:0}}}}
-  @keyframes rise{{from{{opacity:0;transform:translateY(16px)}}to{{opacity:1;transform:none}}}}
   @keyframes word{{0%{{opacity:0;transform:translateY(8px)}}{show * .15:.2f}%,{show * .85:.2f}%{{opacity:1;transform:none}}{show:.2f}%,100%{{opacity:0;transform:translateY(-8px)}}}}
   @keyframes blink{{50%{{opacity:0}}}}
   @keyframes travel{{0%{{transform:translateX(0);opacity:0}}10%,80%{{opacity:1}}100%{{transform:translateX(420px);opacity:0}}}}
   .b1{{animation:drift1 16s ease-in-out infinite;transform-box:fill-box;transform-origin:center}}
   .b2{{animation:drift2 21s ease-in-out infinite;transform-box:fill-box;transform-origin:center}}
   .tw{{animation:twinkle 4s ease-in-out infinite}}
-  .spin{{transform-origin:{cx}px {cy}px;animation:spin 40s linear infinite}}
-  .core{{transform-origin:{cx}px {cy}px;animation:breathe 6s ease-in-out infinite}}
   .ring{{transform-box:fill-box;transform-origin:center;animation:pulse 2.4s ease-out infinite}}
-    .word{{opacity:0}} {word_css}
+  .word{{opacity:0}} {word_css}
   .caret{{animation:blink 1.1s steps(1) infinite}}
   .spark{{animation:travel 5s cubic-bezier(.4,0,.2,1) infinite}}
 </style>
 
 <g clip-path="url(#frame)">
-  <rect width="1200" height="440" fill="#07080D"/>
-  <ellipse class="b1" cx="240" cy="90" rx="260" ry="170" fill="{CYAN}" opacity=".16" filter="url(#blur)"/>
-  <ellipse class="b2" cx="960" cy="300" rx="280" ry="200" fill="{VIOLET}" opacity=".30" filter="url(#blur)"/>
-  <ellipse class="b1" cx="640" cy="470" rx="220" ry="120" fill="#FF5CA8" opacity=".12" filter="url(#blur)"/>
-  {stars(70)}
-  <circle cx="{cx}" cy="{cy}" r="230" fill="url(#halo)"/>
-  {rings(cx, cy)}
-  <g class="core">
-    <circle cx="{cx}" cy="{cy}" r="44" fill="url(#core)"/>
-    <circle cx="{cx}" cy="{cy}" r="44" fill="none" stroke="#fff" stroke-opacity=".35"/>
+  <rect width="1200" height="440" fill="#06070B"/>
+  <ellipse class="b1" cx="240" cy="80" rx="260" ry="170" fill="{CYAN}" opacity=".13" filter="url(#blur)"/>
+  <ellipse class="b2" cx="900" cy="240" rx="320" ry="190" fill="{VIOLET}" opacity=".26" filter="url(#blur)"/>
+  <ellipse class="b1" cx="620" cy="470" rx="240" ry="120" fill="#FF5CA8" opacity=".12" filter="url(#blur)"/>
+  {stars(60)}
+  <g mask="url(#fadeLeft)" filter="url(#glow)">
+  {silk(34, 0.0, 70, 150, 230, xs, .9)}
+  {silk(22, 2.1, 90, 90, 250, xs, .45)}
   </g>
-  <text x="{cx}" y="{cy + 8}" text-anchor="middle" font-family="{SANS}" font-size="22" font-weight="300" letter-spacing="3" fill="#07080D">AW</text>
 </g>
 <rect x=".75" y=".75" width="1198.5" height="438.5" rx="27.5" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
 
-<g class="r1">
-  <rect x="80" y="72" width="150" height="32" rx="16" fill="#ffffff" fill-opacity=".04" stroke="#ffffff" stroke-opacity=".12"/>
-  <circle class="ring" cx="101" cy="88" r="4" fill="{MINT}"/>
-  <circle cx="101" cy="88" r="4" fill="{MINT}"/>
-  <text x="115" y="92.5" font-family="{MONO}" font-size="11.5" letter-spacing="2.5" fill="{INK}" opacity=".9">OPEN TO WORK</text>
+<rect x="80" y="72" width="150" height="32" rx="16" fill="#06070B" fill-opacity=".6" stroke="#ffffff" stroke-opacity=".14"/>
+<circle class="ring" cx="101" cy="88" r="4" fill="{MINT}"/>
+<circle cx="101" cy="88" r="4" fill="{MINT}"/>
+<text x="115" y="92.5" font-family="{MONO}" font-size="11.5" letter-spacing="2.5" fill="{INK}" opacity=".9">OPEN TO WORK</text>
+
+<text x="76" y="176" font-family="{SANS}" font-size="62" font-weight="300" letter-spacing="-1.5" fill="{INK}">Muhammad Abdullah</text>
+<text x="76" y="248" font-family="{SANS}" font-size="62" font-weight="700" letter-spacing="-1.5" fill="url(#shimmer)">Waseem</text>
+<rect x="80" y="274" width="420" height="1" fill="url(#hair)"/>
+<circle class="spark" cx="80" cy="274.5" r="2" fill="#fff"/>
+<circle class="spark" cx="80" cy="274.5" r="7" fill="{CYAN}" opacity=".35" filter="url(#soft)"/>
+<text x="80" y="308" font-family="{SANS}" font-size="19" fill="{MUTED}">Flutter Developer · iOS, Android &amp; Windows apps</text>
+{word_nodes}
+<text x="1120" y="400" text-anchor="end" font-family="{MONO}" font-size="11" letter-spacing="3" fill="{INK}" opacity=".45">JEDDAH, SAUDI ARABIA · REMOTE WORLDWIDE</text>
+</svg>"""
+
+
+# ---------------------------------------------------------------- metrics strip
+METRICS = [("4", "apps live on the stores"), ("17", "engineers led"), ("8", "languages shipped"), ("30+", "projects on GitHub")]
+
+
+def metrics():
+    w, h, col = 1200, 170, 1200 / len(METRICS)
+    cells = []
+    for i, (num, label) in enumerate(METRICS):
+        cx = col * i + col / 2
+        cells.append(
+            f'<text x="{cx:.0f}" y="92" text-anchor="middle" font-family="{SANS}" font-size="58" font-weight="200" letter-spacing="-1" fill="url(#ink)">{num}</text>'
+            f'<text x="{cx:.0f}" y="126" text-anchor="middle" font-family="{MONO}" font-size="12" letter-spacing="2.5" fill="{MUTED}">{escape(label.upper())}</text>'
+        )
+        if i:
+            cells.append(f'<rect x="{col * i:.0f}" y="42" width="1" height="96" fill="url(#vline)"/>')
+    return f"""
+<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="{escape(', '.join(f'{n} {l}' for n, l in METRICS))}">
+<defs>
+  <linearGradient id="ink" x1="80" x2="1120" gradientUnits="userSpaceOnUse" y1="0" y2="0"><stop offset="0" stop-color="{CYAN}"/><stop offset=".5" stop-color="#A78BFF"/><stop offset="1" stop-color="#FF8AD0"/></linearGradient>
+  <linearGradient id="vline" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".18"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <linearGradient id="edge" x1="0" x2="1"><stop offset="0" stop-color="{CYAN}" stop-opacity=".45"/><stop offset=".5" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#FF8AD0" stop-opacity=".45"/></linearGradient>
+  <clipPath id="c"><rect width="{w}" height="{h}" rx="24"/></clipPath>
+</defs>
+<style>
+  @keyframes sweep{{from{{transform:translateX(-300px)}}to{{transform:translateX({w + 300}px)}}}}
+  .sweep{{animation:sweep 9s ease-in-out infinite}}
+</style>
+<g clip-path="url(#c)">
+  <rect width="{w}" height="{h}" fill="#0B0D14"/>
+  <rect class="sweep" x="0" y="-60" width="120" height="{h + 120}" fill="#fff" opacity=".035" transform="skewX(-20)"/>
 </g>
-<text class="r2" x="76" y="176" font-family="{SANS}" font-size="62" font-weight="300" letter-spacing="-1.5" fill="{INK}">Muhammad Abdullah</text>
-<text class="r3" x="76" y="248" font-family="{SANS}" font-size="62" font-weight="700" letter-spacing="-1.5" fill="url(#shimmer)">Waseem</text>
-<g class="r4">
-  <rect x="80" y="276" width="420" height="1" fill="url(#hair)"/>
-  <circle class="spark" cx="80" cy="276.5" r="2" fill="#fff"/>
-  <circle class="spark" cx="80" cy="276.5" r="7" fill="{CYAN}" opacity=".35" filter="url(#soft)"/>
-  <text x="80" y="310" font-family="{SANS}" font-size="19" font-weight="400" fill="{MUTED}">Flutter Developer crafting apps from first sketch to App Store.</text>
+<rect x=".75" y=".75" width="{w - 1.5}" height="{h - 1.5}" rx="23.25" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+{''.join(cells)}
+</svg>"""
+
+
+# ---------------------------------------------------------------- call to action
+def cta():
+    w, h = 1200, 230
+    return f"""
+<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Have an app idea? Let's build it together. Start a project.">
+<defs>
+  <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="{CYAN}"/><stop offset=".3" stop-color="#ffffff" stop-opacity=".05"/><stop offset=".6" stop-color="#A78BFF"/><stop offset=".85" stop-color="#ffffff" stop-opacity=".05"/><stop offset="1" stop-color="#FF8AD0"/>
+    <animateTransform attributeName="gradientTransform" type="rotate" values="0 .5 .5;360 .5 .5" dur="8s" repeatCount="indefinite"/>
+  </linearGradient>
+  <linearGradient id="btn" x1="0" x2="1"><stop offset="0" stop-color="{CYAN}"/><stop offset=".55" stop-color="#A78BFF"/><stop offset="1" stop-color="#FF8AD0"/></linearGradient>
+  <radialGradient id="glow" cx=".5" cy="1" r=".8"><stop offset="0" stop-color="{VIOLET}" stop-opacity=".35"/><stop offset="1" stop-color="{VIOLET}" stop-opacity="0"/></radialGradient>
+  <filter id="soft" x="-30%" y="-80%" width="160%" height="260%"><feGaussianBlur stdDeviation="14"/></filter>
+  <clipPath id="c"><rect width="{w}" height="{h}" rx="28"/></clipPath>
+</defs>
+<style>
+  @keyframes breathe{{0%,100%{{opacity:.35}}50%{{opacity:.8}}}}
+  .halo{{animation:breathe 4s ease-in-out infinite}}
+</style>
+<g clip-path="url(#c)">
+  <rect width="{w}" height="{h}" fill="#0B0D14"/>
+  <rect width="{w}" height="{h}" fill="url(#glow)"/>
 </g>
-<g class="r5">
-  {word_nodes}
-</g>
+<rect x="1" y="1" width="{w - 2}" height="{h - 2}" rx="27" fill="none" stroke="url(#ring)" stroke-width="2"/>
+<text x="600" y="84" text-anchor="middle" font-family="{SANS}" font-size="40" font-weight="300" letter-spacing="-.8" fill="{INK}">Have an app idea? <tspan font-weight="700" fill="url(#btn)">Let's build it.</tspan></text>
+<text x="600" y="118" text-anchor="middle" font-family="{SANS}" font-size="17" fill="{MUTED}">Freelance &amp; contract Flutter development · Remote worldwide</text>
+<rect class="halo" x="490" y="140" width="220" height="52" rx="26" fill="url(#btn)" filter="url(#soft)"/>
+<rect x="490" y="140" width="220" height="52" rx="26" fill="url(#btn)"/>
+<text x="600" y="172" text-anchor="middle" font-family="{SANS}" font-size="17" font-weight="700" fill="#07080D">Start a project  →</text>
 </svg>"""
 
 
@@ -302,4 +358,6 @@ if __name__ == "__main__":
         write(f"section-{slug}-light.svg", section(num, title, light=True))
     for p in PROJECTS:
         write(f"card-{p['slug']}.svg", card(p))
+    write("metrics.svg", metrics())
+    write("cta.svg", cta())
     write("footer.svg", footer())

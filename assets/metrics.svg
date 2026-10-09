@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="170" viewBox="0 0 1200 170" role="img" aria-label="4 apps live on the stores, 17 engineers led, 8 languages shipped, 30+ projects on GitHub">
+<defs>
+  <linearGradient id="ink" x1="80" x2="1120" gradientUnits="userSpaceOnUse" y1="0" y2="0"><stop offset="0" stop-color="#54C5F8"/><stop offset=".5" stop-color="#A78BFF"/><stop offset="1" stop-color="#FF8AD0"/></linearGradient>
+  <linearGradient id="vline" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".18"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <linearGradient id="edge" x1="0" x2="1"><stop offset="0" stop-color="#54C5F8" stop-opacity=".45"/><stop offset=".5" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#FF8AD0" stop-opacity=".45"/></linearGradient>
+  <clipPath id="c"><rect width="1200" height="170" rx="24"/></clipPath>
+</defs>
+<style>
+  @keyframes sweep{from{transform:translateX(-300px)}to{transform:translateX(1500px)}}
+  .sweep{animation:sweep 9s ease-in-out infinite}
+</style>
+<g clip-path="url(#c)">
+  <rect width="1200" height="170" fill="#0B0D14"/>
+  <rect class="sweep" x="0" y="-60" width="120" height="290" fill="#fff" opacity=".035" transform="skewX(-20)"/>
+</g>
+<rect x=".75" y=".75" width="1198.5" height="168.5" rx="23.25" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+<text x="150" y="92" text-anchor="middle" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'SF Pro Display', Inter, Helvetica, Arial, sans-serif" font-size="58" font-weight="200" letter-spacing="-1" fill="url(#ink)">4</text><text x="150" y="126" text-anchor="middle" font-family="'SF Mono', ui-monospace, 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" letter-spacing="2.5" fill="#9AA3B5">APPS LIVE ON THE STORES</text><text x="450" y="92" text-anchor="middle" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'SF Pro Display', Inter, Helvetica, Arial, sans-serif" font-size="58" font-weight="200" letter-spacing="-1" fill="url(#ink)">17</text><text x="450" y="126" text-anchor="middle" font-family="'SF Mono', ui-monospace, 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" letter-spacing="2.5" fill="#9AA3B5">ENGINEERS LED</text><rect x="300" y="42" width="1" height="96" fill="url(#vline)"/><text x="750" y="92" text-anchor="middle" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'SF Pro Display', Inter, Helvetica, Arial, sans-serif" font-size="58" font-weight="200" letter-spacing="-1" fill="url(#ink)">8</text><text x="750" y="126" text-anchor="middle" font-family="'SF Mono', ui-monospace, 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" letter-spacing="2.5" fill="#9AA3B5">LANGUAGES SHIPPED</text><rect x="600" y="42" width="1" height="96" fill="url(#vline)"/><text x="1050" y="92" text-anchor="middle" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'SF Pro Display', Inter, Helvetica, Arial, sans-serif" font-size="58" font-weight="200" letter-spacing="-1" fill="url(#ink)">30+</text><text x="1050" y="126" text-anchor="middle" font-family="'SF Mono', ui-monospace, 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" letter-spacing="2.5" fill="#9AA3B5">PROJECTS ON GITHUB</text><rect x="900" y="42" width="1" height="96" fill="url(#vline)"/>
+</svg>
