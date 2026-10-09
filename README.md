@@ -26,6 +26,23 @@
 
 <br/>
 
+### 🕌 Spotlight: ALLAH Everywhere
+
+<div align="center">
+
+<a href="https://github.com/abdullahwaseem-dev/ALLAH_EVERYWHERE"><img src="https://raw.githubusercontent.com/abdullahwaseem-dev/ALLAH_EVERYWHERE/main/docs/banner.png" width="100%" alt="ALLAH Everywhere"/></a>
+
+**Your whole deen in one app.** Prayer times, Quran & Hifz, Hadith, Qibla, Stories of the Prophets, and family **Challenges** with push notifications and rewards.<br/>
+Flutter · Firebase · Cloud Functions (TypeScript) · iOS & Android home-screen widgets · 8 languages with full RTL
+
+[![View project](https://img.shields.io/badge/View_project-24292F?style=for-the-badge&logo=github&logoColor=white)](https://github.com/abdullahwaseem-dev/ALLAH_EVERYWHERE)
+[![App Store](https://img.shields.io/badge/App_Store-0D96F6?style=for-the-badge&logo=apple&logoColor=white)](https://apps.apple.com/app/id6811425021)
+[![Google Play](https://img.shields.io/badge/Google_Play-34A853?style=for-the-badge&logo=googleplay&logoColor=white)](https://play.google.com/store/apps/details?id=com.allaheverywhere.app)
+
+</div>
+
+<br/>
+
 ### 🛠️ Tech Stack
 
 <div align="center">
@@ -78,6 +95,7 @@
 
 | Project | Details |
 |---|---|
+| [**ALLAH Everywhere**](https://github.com/abdullahwaseem-dev/ALLAH_EVERYWHERE) | Islamic app for iOS & Android: prayer times, Quran & Hifz, Hadith, family Challenges with rewards. Flutter, Firebase, Cloud Functions, 8 languages |
 | **Kids Zone Manager** | Offline Windows Desktop system for family entertainment centers — RFID, thermal printing, bilingual reporting |
 | **CheckIn** | Mobile app — live on App Store & Google Play |
 | **Virtual Try-On** | Mobile app — live on App Store & Google Play |
