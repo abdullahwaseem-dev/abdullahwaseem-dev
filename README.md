@@ -1,112 +1,88 @@
-<div align="center">
+<a href="https://abdullah-waseem.vercel.app/">
+  <img src="./assets/hero.svg" width="100%" alt="Muhammad Abdullah Waseem — Flutter Developer" />
+</a>
 
-<img src="banner.svg" width="100%"/>
+<p align="center">
+  <a href="https://abdullah-waseem.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-0A0C12?style=for-the-badge&logo=vercel&logoColor=54C5F8" alt="Portfolio" /></a>
+  <a href="https://www.linkedin.com/in/abdullahwaseem-dev/"><img src="https://img.shields.io/badge/LinkedIn-0A0C12?style=for-the-badge&logo=linkedin&logoColor=A78BFF" alt="LinkedIn" /></a>
+  <a href="https://www.fiverr.com/users/abdullah3639"><img src="https://img.shields.io/badge/Fiverr-0A0C12?style=for-the-badge&logo=fiverr&logoColor=2EE6A6" alt="Fiverr" /></a>
+  <a href="mailto:muammad112266@gmail.com"><img src="https://img.shields.io/badge/Email-0A0C12?style=for-the-badge&logo=gmail&logoColor=FF8AD0" alt="Email" /></a>
+</p>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&pause=1000&color=02569B&center=true&vCenter=true&width=700&lines=Cross-Platform+Flutter+Development;Bilingual+Arabic%2FEnglish+%7C+Full+RTL+UI;Offline+Windows+Desktop+Systems;Open+for+Remote+Contract+Work)](https://git.io/typing-svg)
+<br />
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://abdullah-waseem.vercel.app/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/muhammad-abdullah-waseem-4159b81a)
-[![Fiverr](https://img.shields.io/badge/Fiverr-1DBF73?style=for-the-badge&logo=fiverr&logoColor=white)](https://www.fiverr.com/users/abdullah3639)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:muammad112266@gmail.com)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/section-about.svg" />
+  <img src="./assets/section-about-light.svg" width="100%" alt="01 — About me" />
+</picture>
 
-![Profile Views](https://komarev.com/ghpvc/?username=abdullahwaseem-dev&color=02569B&style=for-the-badge&label=PROFILE+VIEWS)
+```dart
+final abdullah = Developer(
+  role:      'Flutter Developer · Software Department Head @ Arrow Technical, Jeddah',
+  leads:     '17-engineer team',
+  liveApps:  ['ALLAH Everywhere', 'CheckIn', 'Virtual Try-On', 'HiTechie'],
+  ships:     ['iOS', 'Android', 'Web', 'Windows Desktop'],
+  backend:   ['Firebase', 'Cloud Functions', 'NestJS', 'Node.js', 'PostGIS'],
+  speaks:    ['English', 'العربية'],  // full RTL interfaces
+  loves:     ['Offline-first', 'Clean architecture', 'Smooth 60fps UI'],
+  available: 'Remote Flutter & Windows Desktop contract work',
+);
+```
 
-</div>
+<br />
 
-<br/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/section-work.svg" />
+  <img src="./assets/section-work-light.svg" width="100%" alt="02 — Featured work" />
+</picture>
 
-### 👋 About Me
+<p align="center">
+  <a href="https://github.com/abdullahwaseem-dev/ALLAH_EVERYWHERE"><img src="./assets/card-allah-everywhere.svg" width="49%" alt="Allah Everywhere" /></a>
+  <a href="https://github.com/abdullahwaseem-dev/field-sales-management-system"><img src="./assets/card-field-sales.svg" width="49%" alt="Field Sales Management" /></a>
+  <a href="https://github.com/abdullahwaseem-dev/arrowtech-wristband-erp"><img src="./assets/card-arrowtech-erp.svg" width="49%" alt="ArrowTech Wristband ERP" /></a>
+  <a href="https://github.com/abdullahwaseem-dev/voltstore-redis-clone"><img src="./assets/card-voltstore.svg" width="49%" alt="VoltStore" /></a>
+  <a href="https://github.com/abdullahwaseem-dev/nexus-browser"><img src="./assets/card-nexus-browser.svg" width="49%" alt="Nexus Browser" /></a>
+  <a href="https://github.com/abdullahwaseem-dev/aura-match"><img src="./assets/card-aura-match.svg" width="49%" alt="Aura Match" /></a>
+</p>
 
-- 🚀 **Flutter Developer** & Software Department Head @ Arrow Technical, Jeddah — leading a 17-engineer team
-- 📱 3 apps live on the App Store & Google Play: **CheckIn**, **Virtual Try-On**, **HiTechie**
-- 🖥️ Designed and deployed a fully offline **Kids Zone management system** for Windows Desktop — RFID wristband printing, thermal-printer integration, bilingual AR/EN UI, auto-generated PDF reports
-- 🌍 Bilingual (Arabic/English) with hands-on experience building full **RTL interfaces**
-- 🧠 Also exploring lean SaaS ideas for the GCC/MENA market on the side
-- 🟢 **Currently available for remote Flutter & Windows Desktop contract work**
+<p align="center">
+  <a href="https://apps.apple.com/app/id6811425021"><img src="https://img.shields.io/badge/ALLAH_Everywhere_on_App_Store-0A0C12?style=flat-square&logo=apple&logoColor=white" alt="App Store" /></a>
+  <a href="https://play.google.com/store/apps/details?id=com.allaheverywhere.app"><img src="https://img.shields.io/badge/Google_Play-0A0C12?style=flat-square&logo=googleplay&logoColor=2EE6A6" alt="Google Play" /></a>
+</p>
 
-<br/>
+<p align="center">
+  <sub>
+    More:&nbsp;
+    <a href="https://github.com/abdullahwaseem-dev/kidszone-kiosk">KidsZone Kiosk</a> ·
+    <a href="https://github.com/abdullahwaseem-dev/gatepass">GatePass</a> ·
+    <a href="https://github.com/abdullahwaseem-dev/atc-wristband-designer">ATC Wristband Designer</a> ·
+    <a href="https://github.com/abdullahwaseem-dev/baobi-wristband-manager">Baobi Wristband Manager</a> ·
+    <a href="https://github.com/abdullahwaseem-dev/claude-idea-validator">Claude Idea Validator</a>
+  </sub>
+</p>
 
-### 🕌 Spotlight: ALLAH Everywhere
+<br />
 
-<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/section-stack.svg" />
+  <img src="./assets/section-stack-light.svg" width="100%" alt="03 — Toolbox" />
+</picture>
 
-<a href="https://github.com/abdullahwaseem-dev/ALLAH_EVERYWHERE"><img src="https://raw.githubusercontent.com/abdullahwaseem-dev/ALLAH_EVERYWHERE/main/docs/banner.png" width="100%" alt="ALLAH Everywhere"/></a>
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=flutter,dart,firebase,kotlin,swift,ts,js,react,nextjs,nodejs&theme=dark" alt="Mobile & frontend stack" /><br />
+  <img src="https://skillicons.dev/icons?i=nestjs,python,java,electron,postgres,redis,git,figma,vercel,vscode&theme=dark" alt="Backend & tooling stack" />
+</p>
 
-**Your whole deen in one app.** Prayer times, Quran & Hifz, Hadith, Qibla, Stories of the Prophets, and family **Challenges** with push notifications and rewards.<br/>
-Flutter · Firebase · Cloud Functions (TypeScript) · iOS & Android home-screen widgets · 8 languages with full RTL
+<br />
 
-[![View project](https://img.shields.io/badge/View_project-24292F?style=for-the-badge&logo=github&logoColor=white)](https://github.com/abdullahwaseem-dev/ALLAH_EVERYWHERE)
-[![App Store](https://img.shields.io/badge/App_Store-0D96F6?style=for-the-badge&logo=apple&logoColor=white)](https://apps.apple.com/app/id6811425021)
-[![Google Play](https://img.shields.io/badge/Google_Play-34A853?style=for-the-badge&logo=googleplay&logoColor=white)](https://play.google.com/store/apps/details?id=com.allaheverywhere.app)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/section-activity.svg" />
+  <img src="./assets/section-activity-light.svg" width="100%" alt="04 — Activity" />
+</picture>
 
-</div>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/abdullahwaseem-dev/abdullahwaseem-dev/output/snake-dark.svg" />
+  <img src="https://raw.githubusercontent.com/abdullahwaseem-dev/abdullahwaseem-dev/output/snake-light.svg" width="100%" alt="Contribution snake animation" />
+</picture>
 
-<br/>
-
-### 🛠️ Tech Stack
-
-<div align="center">
-
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
-![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
-![Windows](https://img.shields.io/badge/Windows%20Desktop-0078D6?style=for-the-badge&logo=windows&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Gemini](https://img.shields.io/badge/Gemini%20API-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white)
-
-</div>
-
-<br/>
-
-### 📊 GitHub Stats
-
-<div align="center">
-
-<img height="165" src="https://github-readme-stats-ashy-nu-84.vercel.app/api?username=abdullahwaseem-dev&show_icons=true&theme=tokyonight&hide_border=true&count_private=true"/>
-<img height="165" src="https://github-readme-stats-ashy-nu-84.vercel.app/api/top-langs/?username=abdullahwaseem-dev&layout=compact&theme=tokyonight&hide_border=true"/>
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=abdullahwaseem-dev&theme=tokyonight&hide_border=true"/>
-
-</div>
-
-<br/>
-
-### 🏆 Trophies
-
-<div align="center">
-
-<img src="trophy.svg"/>
-
-</div>
-
-<br/>
-
-### 📈 Activity Graph
-
-<div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=abdullahwaseem-dev&theme=tokyo-night&hide_border=true" width="100%"/>
-
-</div>
-
-<br/>
-
-### 📌 Featured Work
-
-| Project | Details |
-|---|---|
-| [**ALLAH Everywhere**](https://github.com/abdullahwaseem-dev/ALLAH_EVERYWHERE) | Islamic app for iOS & Android: prayer times, Quran & Hifz, Hadith, family Challenges with rewards. Flutter, Firebase, Cloud Functions, 8 languages |
-| **Kids Zone Manager** | Offline Windows Desktop system for family entertainment centers — RFID, thermal printing, bilingual reporting |
-| **CheckIn** | Mobile app — live on App Store & Google Play |
-| **Virtual Try-On** | Mobile app — live on App Store & Google Play |
-| **HiTechie** | Mobile app — live on App Store & Google Play |
-
-<br/>
-
-### 📫 Let's Work Together
-
-📧 muammad112266@gmail.com &nbsp;|&nbsp; 💼 [LinkedIn](https://linkedin.com/in/muhammad-abdullah-waseem-4159b81a) &nbsp;|&nbsp; 🌐 [Portfolio](https://abdullah-waseem.vercel.app/)
-
-<img src="footer.svg" width="100%"/>
-
-</div>
+<img src="./assets/footer.svg" width="100%" alt="Thanks for stopping by" />

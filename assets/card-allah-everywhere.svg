@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="290" viewBox="0 0 520 290" role="img" aria-label="Allah Everywhere: Prayer times, Quran &amp; Hifz, Hadith, Qibla and family challenges with rewards. One app for iOS &amp; Android in 8 languages.">
+<defs>
+  <linearGradient id="sheen" x1="0" x2="1" y1="0" y2="1">
+    <stop offset="0" stop-color="#2EE6A6" stop-opacity=".9"/><stop offset=".35" stop-color="#ffffff" stop-opacity=".06"/>
+    <stop offset=".7" stop-color="#ffffff" stop-opacity=".06"/><stop offset="1" stop-color="#2EE6A6" stop-opacity=".5"/>
+  </linearGradient>
+  <radialGradient id="glow" cx="0" cy="0" r="1"><stop offset="0" stop-color="#2EE6A6" stop-opacity=".22"/><stop offset="1" stop-color="#2EE6A6" stop-opacity="0"/></radialGradient>
+  <linearGradient id="tile" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#2EE6A6"/><stop offset="1" stop-color="#2EE6A6" stop-opacity=".45"/></linearGradient>
+  <clipPath id="c"><rect width="520" height="290" rx="22"/></clipPath>
+</defs>
+<style>
+  @keyframes breathe{0%,100%{opacity:.55}50%{opacity:1}}
+  @keyframes sweep{from{transform:translateX(-200px)}to{transform:translateX(720px)}}
+  .glow{animation:breathe 5s ease-in-out infinite}
+  .sweep{animation:sweep 7s ease-in-out infinite}
+</style>
+<g clip-path="url(#c)">
+  <rect width="520" height="290" fill="#0F121A"/>
+  <rect class="glow" width="572.0" height="319.0" fill="url(#glow)"/>
+  <rect class="sweep" x="0" y="-40" width="60" height="370" fill="#ffffff" opacity=".035" transform="skewX(-20)"/>
+</g>
+<rect x=".75" y=".75" width="518.5" height="288.5" rx="21.25" fill="none" stroke="url(#sheen)" stroke-width="1.5"/>
+<rect x="32" y="30" width="52" height="52" rx="15" fill="url(#tile)"/>
+<text x="58" y="63" text-anchor="middle" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'SF Pro Display', Inter, Helvetica, Arial, sans-serif" font-size="18" font-weight="600" fill="#0A0C12">AE</text>
+<circle cx="380" cy="49" r="5" fill="#00B4AB"/>
+<text x="392" y="54" font-family="'SF Mono', ui-monospace, 'JetBrains Mono', Menlo, Consolas, monospace" font-size="13" fill="#9AA3B5">Dart</text>
+<text x="480" y="56" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'SF Pro Display', Inter, Helvetica, Arial, sans-serif" font-size="20" fill="#F4F6FB" opacity=".7">↗</text>
+<text x="32" y="122" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'SF Pro Display', Inter, Helvetica, Arial, sans-serif" font-size="25" font-weight="600" letter-spacing="-.4" fill="#F4F6FB">Allah Everywhere</text>
+<text x="32" y="150" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'SF Pro Display', Inter, Helvetica, Arial, sans-serif" font-size="15.5" fill="#9AA3B5">Prayer times, Quran &amp; Hifz, Hadith, Qibla and family</text><text x="32" y="174" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'SF Pro Display', Inter, Helvetica, Arial, sans-serif" font-size="15.5" fill="#9AA3B5">challenges with rewards. One app for iOS &amp; Android in</text><text x="32" y="198" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'SF Pro Display', Inter, Helvetica, Arial, sans-serif" font-size="15.5" fill="#9AA3B5">8 languages.</text>
+<rect x="32" y="232" width="79" height="28" rx="14" fill="#2EE6A6" fill-opacity=".1" stroke="#2EE6A6" stroke-opacity=".35"/><text x="72" y="250.5" text-anchor="middle" font-family="'SF Mono', ui-monospace, 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12.5" fill="#2EE6A6">Flutter</text><rect x="119.19999999999999" y="232" width="87" height="28" rx="14" fill="#2EE6A6" fill-opacity=".1" stroke="#2EE6A6" stroke-opacity=".35"/><text x="163" y="250.5" text-anchor="middle" font-family="'SF Mono', ui-monospace, 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12.5" fill="#2EE6A6">Firebase</text><rect x="214.0" y="232" width="110" height="28" rx="14" fill="#2EE6A6" fill-opacity=".1" stroke="#2EE6A6" stroke-opacity=".35"/><text x="269" y="250.5" text-anchor="middle" font-family="'SF Mono', ui-monospace, 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12.5" fill="#2EE6A6">8 languages</text>
+</svg>

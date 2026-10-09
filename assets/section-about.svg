@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="72" viewBox="0 0 900 72" role="img" aria-label="About me">
+<defs>
+  <linearGradient id="ink" x1="0" x2="1"><stop offset="0" stop-color="#54C5F8"/><stop offset="1" stop-color="#A78BFF"/></linearGradient>
+  <linearGradient id="line" x1="0" x2="1"><stop offset="0" stop-color="#A78BFF" stop-opacity=".7"/><stop offset="1" stop-color="#A78BFF" stop-opacity="0"/></linearGradient>
+  <filter id="soft" x="-200%" y="-200%" width="500%" height="500%"><feGaussianBlur stdDeviation="3"/></filter>
+</defs>
+<style>
+  @keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+  @keyframes travel{0%{transform:translateX(0);opacity:0}10%,70%{opacity:1}100%{transform:translateX(648px);opacity:0}}
+  .spark{animation:travel 6s 1.6s cubic-bezier(.4,0,.2,1) infinite both}
+</style>
+<text x="2" y="24" font-family="'SF Mono', ui-monospace, 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" letter-spacing="3" fill="url(#ink)">01 ——</text>
+<text x="0" y="60" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'SF Pro Display', Inter, Helvetica, Arial, sans-serif" font-size="30" font-weight="300" letter-spacing="-.4" fill="#F4F6FB">About me</text>
+<rect class="line" x="136" y="50" width="740" height="1" fill="url(#line)"/>
+<g class="spark"><circle cx="136" cy="50.5" r="6" fill="#54C5F8" opacity=".4" filter="url(#soft)"/><circle cx="136" cy="50.5" r="1.8" fill="#fff"/></g>
+</svg>
