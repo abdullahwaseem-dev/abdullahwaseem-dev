@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="480" viewBox="0 0 1200 480" role="img"><defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101A30"/><stop offset="1" stop-color="#202141"/></linearGradient><linearGradient id="accent"><stop stop-color="#A7F3D0"/><stop offset="1" stop-color="#C4B5FD"/></linearGradient><pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#fff" stroke-opacity=".035"/></pattern></defs><rect width="1200" height="480" rx="24" fill="url(#bg)"/><rect width="1200" height="480" rx="24" fill="url(#grid)"/>
+<circle cx="1100" cy="30" r="220" fill="#9C85F4" opacity=".08"/>
+<circle cx="1090" cy="430" r="230" fill="#8AE4C1" opacity=".05"/>
+<rect x="48" y="42" width="202" height="32" rx="16" fill="#24384A"/>
+<circle cx="67" cy="58" r="4" fill="#A7F3D0"/>
+<text x="80" y="64" fill="#BBF7DC" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700">WELCOME TO MY GITHUB</text>
+<text x="48" y="132" fill="#FFFFFF" font-family="Arial,Helvetica,sans-serif" font-size="54" font-weight="700">Hi, I’m Abdullah.</text>
+<text x="50" y="174" fill="#C5CDE0" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="400">Muhammad Abdullah Waseem</text>
+<text x="48" y="242" fill="#FFFFFF" font-family="Arial,Helvetica,sans-serif" font-size="43" font-weight="700">Thoughtful apps.</text>
+<text x="48" y="295" fill="#B8F4D7" font-family="Arial,Helvetica,sans-serif" font-size="43" font-weight="700">Useful software.</text>
+<text x="50" y="342" fill="#D1D7E6" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="400">Flutter · Mobile · Web · Desktop</text>
+<path d="M50 378H630" stroke="#39435B"/>
+<text x="50" y="414" fill="#C4B5FD" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700">SOFTWARE DEPARTMENT HEAD @ ARROWTECH</text>
+<text x="50" y="444" fill="#A9B4CA" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400">Jeddah, Saudi Arabia  /  Working remotely worldwide</text>
+<g transform="translate(760 86) rotate(-7 95 150)">
+<rect width="190" height="302" rx="28" fill="#0A1120" stroke="#5A6C86" stroke-width="2"/>
+<rect x="10" y="10" width="170" height="282" rx="21" fill="#E8F0EA"/>
+<rect x="61" y="18" width="68" height="15" rx="8" fill="#142C32"/>
+<text x="27" y="68" fill="#26433C" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700">Made for everyday.</text>
+<rect x="23" y="85" width="144" height="80" rx="14" fill="#265E51"/>
+<circle cx="135" cy="109" r="13" fill="#C6E8D2"/>
+<circle cx="140" cy="104" r="12" fill="#265E51"/>
+<text x="35" y="120" fill="#FFFFFF" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700">A little focus.</text>
+<text x="35" y="144" fill="#D4E8DC" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="400">A better day.</text>
+<rect x="23" y="178" width="65" height="54" rx="12" fill="#D0DED2"/>
+<rect x="100" y="178" width="67" height="54" rx="12" fill="#D9D6EC"/>
+<path d="M39 195h31m-31 9h20m44-9h31m-31 9h20" stroke="#557568" stroke-width="3" stroke-linecap="round"/>
+<rect x="23" y="245" width="144" height="27" rx="10" fill="#C5D9CB"/>
+</g>
+<g transform="translate(905 208)">
+<rect width="244" height="166" rx="16" fill="#18243B" stroke="#57617E"/>
+<path d="M0 35H244" stroke="#38455E"/>
+<circle cx="17" cy="17" r="4" fill="#F0AD9D"/><circle cx="32" cy="17" r="4" fill="#E6CD8B"/><circle cx="47" cy="17" r="4" fill="#A7F3D0"/>
+<text x="20" y="65" fill="#C4B5FD" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700">idea → interface</text>
+<text x="20" y="96" fill="#E4E8F3" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400">build(</text>
+<text x="38" y="122" fill="#A7F3D0" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400">somethingUseful</text>
+<text x="20" y="147" fill="#E4E8F3" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400">);</text>
+</g>
+<rect x="918" y="70" width="206" height="42" rx="21" fill="#CCC1F2"/>
+<text x="938" y="97" fill="#20213C" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700">Crafted with purpose.</text>
+</svg>

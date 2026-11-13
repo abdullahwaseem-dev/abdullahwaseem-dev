@@ -1,52 +1,73 @@
-# Muhammad Abdullah Waseem
+<p align="center">
+  <img src="./assets/welcome-v2.svg" width="100%" alt="Hi, I'm Abdullah. Thoughtful apps. Useful software. Flutter developer and Software Department Head at ArrowTech, based in Jeddah." />
+</p>
 
-**Flutter developer · Software Department Head at ArrowTech · Jeddah, Saudi Arabia**
+<p align="center">
+  <a href="https://abdullah-waseem.vercel.app/"><img src="https://img.shields.io/badge/Explore_my_portfolio-18243B?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=A7F3D0" alt="Explore my portfolio" /></a>
+  <a href="https://www.linkedin.com/in/abdullahwaseem-dev/"><img src="https://img.shields.io/badge/Connect_on_LinkedIn-18243B?style=for-the-badge&amp;logoColor=C4B5FD" alt="Connect on LinkedIn" /></a>
+  <a href="mailto:maw112266@gmail.com"><img src="https://img.shields.io/badge/Let%E2%80%99s_talk-18243B?style=for-the-badge&amp;logo=gmail&amp;logoColor=A7F3D0" alt="Let's talk by email" /></a>
+</p>
 
-I build mobile apps and business software, with Flutter at the centre of my work. My projects span daily-use apps, field-sales tools, desktop printing workflows, and web products.
+<br />
 
-I lead the software department at [ArrowTech](https://arrowtech.sa/) and work with clients remotely. I care about clear interfaces, practical integrations, and software that fits the people using it.
+### A little about me
 
-[Portfolio](https://abdullah-waseem.vercel.app/) · [LinkedIn](https://www.linkedin.com/in/abdullahwaseem-dev/) · [Email me](mailto:maw112266@gmail.com)
+Thanks for stopping by. I'm **Muhammad Abdullah Waseem**, a Flutter developer and Software Department Head at [ArrowTech](https://arrowtech.sa/) in Jeddah, Saudi Arabia.
 
----
+I enjoy turning an idea into something people can actually use: a calmer daily routine, an easier workflow, or an app that makes a complicated task feel simple. My work spans **mobile apps, web products, and desktop tools**, with a particular interest in thoughtful interfaces and Arabic/English experiences.
 
-## Products I'm building
+<br />
 
-### Allah Everywhere
-An Islamic app for daily worship, including prayer times, Quran reading, duas, and Qibla. Built with Flutter for iOS and Android.
+## Things I'm building
 
-[App Store](https://apps.apple.com/app/id6811425021) · [Google Play](https://play.google.com/store/apps/details?id=com.allaheverywhere.app) · [Project & screenshots](https://github.com/abdullahwaseem-dev/ALLAH_EVERYWHERE)
+<p align="center">
+  <a href="https://github.com/abdullahwaseem-dev/ALLAH_EVERYWHERE"><img src="./assets/project-allah-v2.svg" width="49%" alt="Allah Everywhere — Flutter and Firebase app for daily worship, on iOS and Android" /></a>
+  <a href="https://idlebid.com/"><img src="./assets/project-idlebid-v2.svg" width="49%" alt="IdleBid — a platform for founders, startups, and small businesses" /></a>
+</p>
+<p align="center">
+  <a href="https://github.com/abdullahwaseem-dev/field-sales-management-system"><img src="./assets/project-sales-v2.svg" width="49%" alt="Field Sales Management — Flutter, React, and NestJS tools for field teams" /></a>
+  <a href="https://github.com/abdullahwaseem-dev/voltstore-redis-clone"><img src="./assets/project-volt-v2.svg" width="49%" alt="VoltStore — MIT-licensed TypeScript learning project exploring RESP, TCP, and TTL expiry" /></a>
+</p>
 
-### IdleBid
-A platform for founders, startups, and small businesses to put their work in front of more people.
+<p align="center">
+  <b>Try Allah Everywhere</b><br /><br />
+  <a href="https://apps.apple.com/app/id6811425021"><img src="https://img.shields.io/badge/App_Store-101A30?style=for-the-badge&amp;logo=apple&amp;logoColor=white" alt="Download on the App Store" /></a>
+  <a href="https://play.google.com/store/apps/details?id=com.allaheverywhere.app"><img src="https://img.shields.io/badge/Google_Play-101A30?style=for-the-badge&amp;logo=googleplay&amp;logoColor=A7F3D0" alt="Get it on Google Play" /></a>
+</p>
 
-[Explore IdleBid](https://idlebid.com/)
+**Also on my workbench:** [ATC Wristband Designer](https://github.com/abdullahwaseem-dev/atc-wristband-designer) — Flutter desktop tools for layouts, barcodes, and printing workflows.
 
-## Selected engineering work
+<sub>Some repositories showcase commercial work and have restrictive licenses. VoltStore is MIT licensed; its browser dashboard is a simulation. Check each project's README and license before reusing code.</sub>
 
-| Project | What to explore | Stack |
-| --- | --- | --- |
-| [Field Sales Management](https://github.com/abdullahwaseem-dev/field-sales-management-system) | Mobile attendance and location workflows, sales targets, and an admin portal with Arabic/English interfaces. | Flutter, React, NestJS, PostgreSQL |
-| [ATC Wristband Designer](https://github.com/abdullahwaseem-dev/atc-wristband-designer) | A desktop interface for wristband layouts, variable data, barcodes, and printing workflows. | Flutter, Dart |
-| [VoltStore](https://github.com/abdullahwaseem-dev/voltstore-redis-clone) | A learning project implementing a small RESP-speaking key-value server, TTL expiry, and a separate simulated dashboard. | TypeScript, Node.js |
+<br />
 
-**Looking for reusable code?** Start with [VoltStore](https://github.com/abdullahwaseem-dev/voltstore-redis-clone), which is MIT licensed. Some other repositories are public portfolio showcases with restrictive licenses; check each project's license before reusing its code.
+## My everyday toolkit
 
-## What I work with
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=flutter,dart,firebase,ts,nodejs,react,postgres,git&amp;theme=dark&amp;perline=8" alt="Flutter, Dart, Firebase, TypeScript, Node.js, React, PostgreSQL, and Git" />
+</p>
 
-- **Mobile:** Flutter, Dart, Firebase, notifications, and API integration.
-- **Business applications:** admin portals, operational workflows, and Arabic/English RTL interfaces.
-- **Desktop:** Flutter applications, label design, and printer integration.
-- **Backend and web:** Node.js, TypeScript, React, and PostgreSQL.
+| Building for people | Connecting the pieces |
+| :--- | :--- |
+| Flutter apps for mobile and desktop | Firebase and backend APIs |
+| Arabic/English layouts and RTL interfaces | Notifications and data workflows |
+| Admin portals and business tools | Printing and device integrations |
 
-## Work with me
+<br />
 
-I'm interested in remote software projects and roles involving Flutter, mobile apps, and business tools.
+## Let's build something useful
 
-For project enquiries, [email me](mailto:maw112266@gmail.com) with the problem you're solving, your target platforms, and your timeline. You can also reach me on [LinkedIn](https://www.linkedin.com/in/abdullahwaseem-dev/).
+I'm open to **remote projects and software roles** involving Flutter, mobile apps, and business tools. Tell me what you're working on, who it's for, and where you need help.
 
-## Explore and contribute
+<a href="mailto:maw112266@gmail.com"><img src="./assets/connect-v2.svg" width="100%" alt="Have something in mind? Let's talk about your app, your users, and what you want to build. Email maw112266@gmail.com." /></a>
 
-If a project helps you, a star is a welcome way to bookmark it. Useful bug reports, reproducible examples, and thoughtful feedback are equally appreciated. Check the repository's license and contribution guidance before proposing code changes.
+<p align="center">
+  <a href="https://abdullah-waseem.vercel.app/">Portfolio</a> &nbsp; · &nbsp;
+  <a href="https://www.linkedin.com/in/abdullahwaseem-dev/">LinkedIn</a> &nbsp; · &nbsp;
+  <a href="mailto:maw112266@gmail.com">Email</a> &nbsp; · &nbsp;
+  <a href="https://github.com/abdullahwaseem-dev?tab=repositories">Explore my repositories</a>
+</p>
 
-[Browse my public repositories](https://github.com/abdullahwaseem-dev?tab=repositories)
+<p align="center">
+  <sub>Found something useful? A star, a thoughtful issue, or a kind hello is always appreciated.</sub>
+</p>
